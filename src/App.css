@@ -469,6 +469,13 @@
   display: none;
 }
 
+.card-title img{
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+
+}
+
 @media (max-width: 468px) {
   .toggleapp {
     display: block;

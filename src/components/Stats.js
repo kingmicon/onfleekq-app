@@ -5,6 +5,7 @@ import { IoIosArrowDown } from 'react-icons/io'
 import { IoTimeSharp } from "react-icons/io5"
 import Data from './Data'
 import Card from './Card'
+import woman from "../images/avatar-woman.jpg"
 
 
 
@@ -97,7 +98,7 @@ const Stats = () => {
         </div>
         <div className='stat-card'>
           <div className='card-title'>
-            <img src='#' alt='profile-pic' />
+            <img src={woman} alt='profile-pic' />
             <div className='card-title-text'>
               <h4>Lilly Donovan</h4>
               <h5>Business trainer</h5>
