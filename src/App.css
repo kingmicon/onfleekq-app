@@ -1,0 +1,736 @@
+.App {
+  margin: 2px 5px 0px 55px;
+  background: rgba(255, 255, 255, 1);
+  padding: 15px 10px;
+  border-radius: 15px;
+  font-family: monospace;
+  font-weight: 600;
+  font-size: 15px;
+  position: absolute; 
+  z-index: -1;
+}
+
+.Header-body {
+  margin: 15px 16px;
+  display: flex;
+  flex-direction: row;
+}
+
+.search-bar {
+  padding: 10px;
+}
+
+.search-button {
+  position: absolute;
+  padding-top: 10px;
+  padding-left: 15px;
+  color: rgb(169, 169, 250);
+}
+
+.search-input {
+  padding: 10px 360px 10px 35px;
+  background: rgba(196, 189, 213, 1);
+  border-radius: 10px;
+  border: none;
+}
+
+
+.Header-nav ul {
+  display: flex;
+  list-style: none;
+  margin-top: 17px;
+}
+
+.Header-nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.Header-notification {
+  margin-left: 200px;
+  display: flex;
+  padding: 15px;
+}
+
+.notification-icon {
+  padding-right: 20px;
+}
+
+.notification-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.notification-icon1 {
+  font-size: 25px;
+  padding-top: 5px;
+  color: rgb(234, 234, 248);
+} 
+
+.notification-count {
+  font-size: xx-small;
+  color: rgb(199, 8, 8);
+  margin-left: -9px;
+  position: absolute;
+  margin-top: 5px;
+}
+
+.Header-notification img {
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.modal {
+  margin-left: -40px;
+  cursor: pointer;
+}
+
+.close {
+  padding-right: 5px;
+  margin-top: -80px;
+  color: blue;
+  cursor: pointer;
+}
+.modal-content img {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.nav-bar1 {
+  display: none;
+}
+
+.nav-bar {
+  height: 95%;
+  width: 70px;
+  background-color: rgba(51, 38, 174, 1);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.nav-bar ul {
+  margin-top: 200px;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-bar ul li {
+  margin: 15px 0px 10px 20px;
+  cursor: pointer;
+  font-size: 25px;
+  color: rgb(234, 234, 248);
+}
+
+.nav-bar ul li.active {
+  background-color: rgb(247, 237, 237);
+  border-radius: 5px;
+  color: red;
+  margin-left: 45px;
+  margin-right: 10px;
+  padding: 5px 30px 5px 5px;
+}
+
+.nav-bar ul li :hover {
+  background-color: white;
+  border-radius: 5px;
+  color: red;
+  padding: 5px;
+  margin-left: 20px;
+}
+
+.first-stat {
+  margin-left: 45px;
+  margin-top: 40px;
+}
+.first-stats {
+  display: flex;
+}
+
+.card-body {
+  display: flex;
+  margin-left: 25px;
+  border-radius: 15px;
+  background-color: white;
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-right: 55px;
+  box-shadow: 10px 10px 10px 10px  rgba(196, 189, 213, 1);
+}
+
+.card-text {
+  line-height: 0px;
+  padding-left: 15px;
+  margin-top: -15px;
+}
+
+
+.card-text h6 {
+  color:  rgb(234, 234, 248);
+}
+
+.card-body1 {
+  background-color: red;
+  display: flex;
+  margin-left: 25px;
+  border-radius: 15px;
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-right: 55px;
+  color: white;
+  box-shadow: 10px 10px 10px 10px  rgba(196, 189, 213, 1);
+}
+
+.chart-line {
+  margin-bottom: -19px;
+}
+
+.statistic-chart1 {
+  margin: 100px 5px 5px 5px;
+  background-color: rgba(196, 189, 213, 1);
+  border-radius: 15px;
+  width: 55%;
+}
+
+.statistic-chart1-text {
+  margin: 15px 0px 0px 10px;
+  padding: 10px 0px 0px 10px;
+  display: flex;
+}
+
+.statistic-chart1-text h3 {
+  padding: 10px 200px 0px 10px;
+  margin: 10px 100px 0px 10px;
+}
+.statistic-chart1-text button {
+  padding: 7px 15px 7px 15px;
+  margin: 10px 5px 0px 100px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  color: rgba(51, 38, 174, 1);
+}
+
+.chart-stat {
+  margin-top: 15px;
+  width: 50%;
+  display: flex;
+}
+
+.spent-time-chart {
+  margin-top: 15px;
+}
+
+.spent-time-chart-body svg {
+  position: absolute;
+}
+
+.stat-card {
+  margin-left: 350px;
+  margin-top: -200px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px 10px  rgba(196, 189, 213, 1);
+  width: 26%;
+  font-weight: bolder;
+  font-size: 10px;
+}
+
+.spent-time-chart-body h4 {
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.chart-card svg {
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.chart-card-text p {
+  margin-left: 200px;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 13px;
+  font-weight: bolder;
+  margin-top: -30px;
+}
+
+.chart-days-body {
+  margin-left: 25px;
+  margin-top: 100px;
+  display: flex;
+}
+
+.chart-days {
+  padding: 5px;
+}
+
+.card-title {
+  display: flex;
+  margin-left: 20px;
+  padding: 15px;
+}
+
+.card-title-text{
+  line-height: 0;
+  margin-top: -12px;
+  margin-left: 10px;
+}
+
+.card-text1 {
+  margin-left: 25px;
+  width: 60%;
+}
+
+.card-text2 {
+  display: flex;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+.card-text2-text {
+  display: flex;
+}
+
+.card-text2-icon {
+  color: rgba(51, 38, 174, 1);
+  font-size: 12px;
+}
+
+.card-text3-icon {
+  color: rgb(122, 229, 243);
+  font-size: 14px;
+}
+
+.card-text4-icon {
+  color: rgb(241, 13, 13);
+  font-size: 14px;
+}
+
+.card-text2-text p {
+  margin-top: 0px;
+  margin-left: 7px;
+  margin-right: 5px;
+}
+
+.card-text3 {
+  margin-left: 25px;
+  display: flex;
+}
+
+.card-text3 button {
+  padding: 10px;
+  background-color: rgba(51, 38, 174, 1);
+  color: white;
+  margin-left: 100px;
+  margin-bottom: 60px;
+  border-radius: 25px;
+  border: none;
+  font-size: 12px;
+}
+
+.card-text3 button span {
+  margin-left: 10px;
+}
+
+.payment-card {
+  margin-left: 750px;
+  background-color:rgba(196, 189, 213, 1);
+  margin-top: -700px;
+  padding: 25px;
+  border-radius: 15px;
+  width: 34%;
+}
+
+.card-pen {
+  padding-left: 350px;
+}
+
+.card-pen button {
+  border: none;
+  background-color: rgba(196, 189, 213, 1);
+  cursor: pointer;
+  color: white;
+}
+
+.card-pen button .pencil {
+  padding-left: 10px;
+}
+
+.card-pen button .dot {
+  position: absolute;
+  padding-top: 7px;
+  margin-left: -10px;
+}
+
+.card-payment-percentage {
+  margin-left: 180px;
+  margin-top: 10px;
+}
+
+.card-payment-amount {
+  margin-left: 200px;
+  background-color: rgba(51, 38, 174, 1);
+  border-radius: 15px;
+  text-align: center;
+  padding: 15px 25px;
+  color: white;
+  position: absolute;
+}
+
+.card-payment-percentage3 {
+  padding: 40px;
+  color: rgba(51, 38, 174, 1);
+  border-radius: 50%;
+  background-color: white;
+}
+
+.card-payment-percentage2 {
+  padding: 25px 20px 25px 20px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+}
+
+.card-payment-percentage1 {
+  padding-top: 40px;
+  font-size: 20px;
+  width: 70%;
+  height: 70%;
+  margin-left: -40px;
+}
+
+.mycard-payment {
+  margin-top: 10px;
+  font-size: 18px;
+  display: flex;
+}
+.mycard-payment button {
+  margin-left: 300px;
+  border: none;background-color: rgba(196, 189, 213, 1);
+  font-size: 20px;
+}
+
+.vector-card {
+  margin-left: 15px;
+}
+
+.vector-card1 {
+  display: flex;
+  margin-top: 20px;
+}
+
+.vector2 {
+  width: 50%
+}
+
+.vector3 {
+  margin-left: -200px;  
+  margin-top: -128px;
+  width: 90%;
+}
+
+.vector12 {
+  width: 190%;
+}
+
+.vector1{
+  margin-top: 75px;
+  margin-left: -238px;
+}
+
+.card-payment-transaction {
+  margin-top: 20px;
+  display: flex;
+}
+
+.card-payment-transaction button {
+  text-align: center;
+  margin-top: 20px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: none;
+  margin-left: 250px;
+  background-color: red;
+  color: white;
+}
+
+.toggleapp {
+  display: none;
+}
+
+@media (max-width: 468px) {
+  .toggleapp {
+    display: block;
+  }
+  .toggle-button {
+    text-align: center;
+  }
+  .toggle-button1 {
+    padding: 5px 15px ;
+    border-radius: 15px;
+    text-align: center;
+    border: none;
+    font-size: 25px;
+  }
+  
+  .stats-paymentapp {
+    display: none;
+  }
+  .App {
+    margin: 0px;
+  }
+  
+  .Header-body {
+    margin: 15px 0px;
+  }
+  
+  .search-bar {
+    display: none;
+  }
+  
+  .Header-nav ul {
+    display: none;
+  }
+  
+  .Header-notification {
+    margin-left: 200px;
+    display: flex;
+    padding: 15px;
+  }
+  
+  .notification-icon {
+    padding-right: 1px;
+  }
+  
+  
+  .modal {
+    margin-left: -80px;
+  }
+  
+  .nav-bar {
+    display: none;
+  }
+
+  .nav-bar1 {
+    display: block;
+    background-color: blue;
+    border-radius: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: auto;
+  }
+  .nav-bar1 ul {
+    display: flex;
+    list-style: none;
+    padding-right: 10px;
+    
+  }
+  
+  .nav-bar1 ul li {
+    margin: 10px 10px 0px 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(234, 234, 248);
+  }
+  
+  .nav-bar1 ul li.active {
+    background-color: rgb(247, 237, 237);
+    border-radius: 5px;
+    color: red;
+    margin-left: 1px;
+    margin-top: -30px;
+    padding: 1px 10px ;
+  }
+  
+  .nav-bar1 ul li :hover {
+    background-color: white;
+    border-radius: 5px;
+    color: red;
+    padding: 5px;
+  }
+  
+  .first-stat {
+    margin-left: -10px;
+    margin-top: 25px;
+  }
+  .first-stats {
+    display: flex;
+  }
+  
+  .card-body {
+    display: block;
+    margin-left: 10px;
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  
+  .card-text {
+    padding-left: 5px;
+    margin-top: 10px;  
+  }
+  
+  
+  .card-body1 {
+    display: block;
+    margin-left: 10px;
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  
+  .statistic-chart1 {
+    margin: 50px 5px 5px 5px;
+    width: 50%;
+  }
+  
+  .statistic-chart1-text {
+    margin: 15px 0px 0px 5px;
+    padding: 10px 0px 0px 10px;
+    display: flex;
+  }
+  
+  .statistic-chart1-text h3 {
+    padding: 10px 10px 0px 10px;
+    margin: 10px 40px 0px 10px;
+    font-size: 14px;
+  }
+  .statistic-chart1-text button {
+    padding: 7px 15px 7px 15px;
+    margin: 10px 5px 0px 10px;
+    font-size: 14px;
+  }
+
+  .chart-statistic {
+    width: 40%;
+  }
+  
+  .chart-stat {
+    margin-top: 15px;
+    width: 50%;
+    display: block;
+  }
+  
+  .spent-time-chart {
+    margin-top: 15px;
+    display: block;
+  }
+  
+  .spent-time-chart-body svg {
+    margin-left: -140px;
+    margin-top: 15px;
+    width: 52%;
+  }
+  
+  .stat-card {
+    margin-left: 10px;
+    margin-top: 60px;
+    width: 50%;
+  }
+  
+  .spent-time-chart-body h4 {
+    padding-left: 5px;
+    margin-left: -140px;
+  }
+  
+  
+  .chart-days-body {
+    margin-left: 25px;
+    margin-top: 100px;
+    display: flex;
+  }
+  
+  .chart-days {
+    padding: 5px;
+  }
+  
+  .payment-card {
+    margin-left: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    width: 65%;
+  }
+  
+  .card-pen {
+    padding-left: 200px;
+    padding-top: 10px;
+  }
+  
+  .card-payment-percentage {
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+  
+  .card-payment-amount {
+    margin-left: 140px;
+    padding: 15px 25px;
+  }
+  
+  .card-payment-percentage3 {
+    padding: 20px;
+  }
+  
+  
+  .card-payment-percentage1 {
+    padding-top: 40px;
+    font-size: 20px;
+    width: 60%;
+    height: 60%;
+    margin-left: 50px;
+  }
+  
+  .mycard-payment button {
+    margin-left: 160px;
+  }
+  
+  .vector-card {
+    margin-left: 10px;
+  }
+  
+  .vector-card1 {
+    margin-top: 20px;
+  }
+  
+  .vector2 {
+    width: 45%
+  }
+  
+  .vector3 {
+    margin-left: -108px;  
+    margin-top: -80px;
+    width: 80%;
+  }
+  
+  .vector12 {
+    width: 110%;
+  }
+  
+  .vector1{
+    margin-top: 36px;
+    margin-left: -138px;
+  }
+  
+  .card-payment-transaction {
+   margin-left: 10px;
+  }
+  
+  .card-payment-transaction button {
+    margin-left: 90px;
+    margin-top: 10px;
+    background-color: red;
+  }
+}
