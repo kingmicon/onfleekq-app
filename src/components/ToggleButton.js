@@ -1,4 +1,4 @@
-import React, { Component, useContext } from 'react'
+import React, { useContext } from 'react'
 import { ToggleContext } from './ToggleContext';
 import Stats from './Stats';
 import Payment from './Payment';
@@ -8,10 +8,10 @@ import {CiCreditCard2} from "react-icons/ci"
 const ToggleButton = () => {
 
     const {toggle, toggleComponent} = useContext(ToggleContext);
-    const handleToggle = () => {
-      if(Component === "Stats") {
+    const handleToggle = (component) => {
+      if(component === "Stats") {
         toggleComponent();
-      } else if (Component === "Payment") {
+      } else if (component === "Payment") {
         toggleComponent();
       }
     }

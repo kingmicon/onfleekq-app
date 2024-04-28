@@ -511,7 +511,7 @@
   }
   
   .Header-notification {
-    margin-left: 200px;
+    margin-left: 280px;
     display: flex;
     padding: 15px;
   }
@@ -536,19 +536,18 @@
     position: fixed;
     bottom: 0;
     left: 0;
-    width: auto;
+    width: 100%;
   }
   .nav-bar1 ul {
     display: flex;
     list-style: none;
-    padding-right: 10px;
-    
+    padding-right: 50px;
   }
   
   .nav-bar1 ul li {
-    margin: 10px 10px 0px 10px;
+    margin: 10px 20px 0px 10px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 25px;
     color: rgb(234, 234, 248);
   }
   
@@ -669,7 +668,7 @@
     margin-left: 5px;
     margin-top: 10px;
     padding: 5px;
-    width: 65%;
+    width: 90%;
   }
   
   .card-pen {
@@ -678,30 +677,32 @@
   }
   
   .card-payment-percentage {
-    margin-left: 40px;
+    margin-left: 30px;
     margin-top: 20px;
   }
   
   .card-payment-amount {
-    margin-left: 140px;
+    margin-left: 200px;
     padding: 15px 25px;
   }
   
-  .card-payment-percentage3 {
-    padding: 20px;
-  }
-  
+  .card-payment-percentage2 {
+    padding: 50px 45px 50px 45px;
+}
   
   .card-payment-percentage1 {
     padding-top: 40px;
     font-size: 20px;
-    width: 60%;
-    height: 60%;
+    width: 70%;
+    height: 70%;
     margin-left: 50px;
+  }
+  .mycard-payment {
+    margin-left: 10px;
   }
   
   .mycard-payment button {
-    margin-left: 160px;
+    margin-left: 180px;
   }
   
   .vector-card {
@@ -713,22 +714,22 @@
   }
   
   .vector2 {
-    width: 45%
+    width: 50%
   }
   
   .vector3 {
-    margin-left: -108px;  
-    margin-top: -80px;
-    width: 80%;
+    margin-left: -168px;  
+    margin-top: -110px;
+    width: 90%;
   }
   
   .vector12 {
-    width: 110%;
+    width: 165%;
   }
   
   .vector1{
-    margin-top: 36px;
-    margin-left: -138px;
+    margin-top: 52px;
+    margin-left: -202px;
   }
   
   .card-payment-transaction {
