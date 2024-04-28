@@ -1,12 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import Chart from "react-apexcharts"
 import ApexCharts from 'apexcharts';
 import dayjs from "dayjs"
 
-
-
 const Data = () => {
-    const options = {
+    const options = useMemo(() => ({
         series: [{
             name: "candle",
             data: [
@@ -75,27 +73,21 @@ const Data = () => {
             },
             labels: {formatter: function(val) {return dayjs(val).format("MMM")}}
         },
-
-    };
+    }), []);
 
     useEffect (() => {
-        
         const chart = new ApexCharts(document.querySelector("#chart"), options);
         chart.render();
         return () => {
             chart.destroy()
         };
-    }, []);
+    }, [options]); 
 
     return (
         <div id="chart" className='chart-statistic'>
             <Chart options={options} series={options.series} type="candlestick" height={350} />
         </div>
     );
-
-   
-
 }
-    
 
-export default Data
+export default Data;
